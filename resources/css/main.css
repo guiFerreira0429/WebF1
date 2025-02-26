@@ -8054,3 +8054,35 @@ blockquote {
     grid-column: span 1 / span 1;
   }
 }
+
+.partner-feup{
+  background-image: url("../img/FEUP-partner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(80%);
+  padding: 8px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.partner-feup:hover{
+  filter: grayscale(0%);
+  background-color: white;
+  box-shadow: white 0px 0px 10px 0px;
+}
+
+.partner-catim {
+  background-image: url("../img/catim-partner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(80%);
+  padding: 8px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.partner-catim:hover {
+  filter: grayscale(0%);
+  background-color: white;
+  box-shadow: white 0px 0px 10px 0px;
+}
