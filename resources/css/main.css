@@ -5492,9 +5492,9 @@ blockquote {
   color: #fff;
   width: 100%;
   max-width: 60%;
-  margin-bottom: 0;
-  font-size: 76px;
-  line-height: 130%;
+  margin-bottom: 10px;
+  font-size: 56px;
+  line-height: 110%;
 }
 
 .hero-info {
@@ -5807,6 +5807,11 @@ blockquote {
   max-width: 140px;
 }
 
+@keyframes scroll-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-155%); }
+}
+
 .instagram {
   grid-column-gap: 1px;
   grid-template-rows: auto auto;
@@ -5831,6 +5836,7 @@ blockquote {
 .insta-wrap {
   grid-column-gap: 1px;
   display: flex;
+  animation: scroll-horizontal 30s linear infinite;
 }
 
 .insta-icon {
@@ -5847,6 +5853,12 @@ blockquote {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.insta-link:hover .insta-icon {
+  opacity: 1;
 }
 
 .hero-image {
@@ -8053,4 +8065,36 @@ blockquote {
   #name.w-node-_258db7f1-f997-7313-5933-6af3da90624d-e68a5603, #message.w-node-_258db7f1-f997-7313-5933-6af3da906250-e68a5603 {
     grid-column: span 1 / span 1;
   }
+}
+
+.partner-feup{
+  background-image: url("../img/FEUP-partner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(80%);
+  padding: 8px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.partner-feup:hover{
+  filter: grayscale(0%);
+  background-color: white;
+  box-shadow: white 0px 0px 10px 0px;
+}
+
+.partner-catim {
+  background-image: url("../img/catim-partner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(80%);
+  padding: 8px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.partner-catim:hover {
+  filter: grayscale(0%);
+  background-color: white;
+  box-shadow: white 0px 0px 10px 0px;
 }
